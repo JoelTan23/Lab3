@@ -30,11 +30,19 @@ def bubble_sort(arr, sorting_order):
                     if arr_result[j] < arr_result[j + 1]:
                         arr_result[j], arr_result[j + 1] = arr_result[j + 1], arr_result[j]
 
+                elif j in arr:
+                    isinstance(j, float or bool or tuple) #help from chatGPT
+                    arr_result = [2]
+            
+
                 else:
-                    # Return an empty array
-                    arr_result = []
+                    # ~Return an empty array~
+                    # Return 0
+                    arr_result = [0]
+
     else:
-        arr_result = -1
+        arr_result = [1]
+
 
     return arr_result
 

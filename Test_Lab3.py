@@ -27,4 +27,31 @@ def test_bubble_sort_invalid():
 
     result = Lab3.bubble_sort(input_arr, 3)
 
-    assert (result == [])
+    assert (result == [0])
+
+def test_more_than_10():
+    result = []
+    input_arr =[1,2,3,4,5,6,7,8,9,10] #10 or more numbers in the array
+
+    result = Lab3.bubble_sort(input_arr,any)
+
+    assert (result ==[1])
+
+    
+
+def test_0_numbers():
+    result =[]
+    input_arr = [] #nothing in the array
+
+    result = Lab3.bubble_sort(input_arr,any)
+
+    assert (result == [0])
+
+    
+
+def not_all_integers(arr):
+    input_arr = [1.5,2,3,4,5,6]
+
+    result = Lab3.bubble_sort(input_arr, any)
+
+    assert (result == [2])
