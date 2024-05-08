@@ -10,7 +10,11 @@ def total_cost_shopping():
         if key in quantity_list:
             # complete the implementation below:
 
-    print("total cost = ", total_cost)
+            total_cost += price_list[key]*quantity_list[key]
+
+            print("total cost = ", total_cost)
+
+            return total_cost
 
 
 def cost_of_fruits(fruit, quantity):
@@ -20,6 +24,8 @@ def cost_of_fruits(fruit, quantity):
             break
 
     print("cost of ", quantity, fruit, "=", cost)
+
+    return cost
 
 
 def main():

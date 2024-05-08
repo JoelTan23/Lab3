@@ -45,7 +45,7 @@ def test_0_numbers():
 
     result = Lab3.bubble_sort(input_arr,any)
 
-    assert (result == [0])
+    assert (result == [])
 
     
 
